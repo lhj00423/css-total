@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin :0; padding: 0 ; box-sizing: border-box;}
+        body{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;}
+        table{
+                border:1px solid #333 ;
+                border-collapse: collapse ;
+                width: 1100px;
+                margin: 0 auto;}
+               .header{ text-align: center;
+                    
+            }
+            h1{
+                text-align: center;
+            }
+            #ce{
+                text-align: center;
+            }
+            
+            .clear::after{
+                display: block;
+                    content: "";
+                    clear: both;
+            }
+               ul{
+                    float: left;
+                    background: #4d4d4d;
+                    
+               }
+               .link2{
+                float: right;
+               }
+
+               li{list-style: none;}
+
+               .link1 ul{
+                float: left;
+                
+               }
+               .link1 ul li{
+                float: right;
+               }
+               a { 
+                text-decoration: none; color: inherit;}
+
+                
+                
+                div.gr{
+                    margin: 10px 0;
+                    height: 180px;
+                }
+                .gr{ 
+                    background-color: #555;
+                    color: #fff;
+                    padding: 16px;
+                }
+                #main, #main2, #main3, #main4{
+                    background-color: #fff;
+                    padding: 16px;
+                    margin-bottom: 16px;
+                }
+                #footer{
+                    background-color: #4d4d4d;
+                    color: #fff;
+                    text-align: center;
+                    padding: 30px;
+                }
+               #main1,#main3{
+                float: left;
+               }
+               #main2, #main4{
+                float: right;
+                padding: 0 20px;
+               }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>My Wesite</h1> <p id="ce">Lorenipsum dolor sit amet,consecteir adipiscing elit</p>
+        <div id="m1"class="clear" >
+            
+           
+            <ul class="link1">
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+            <ul class="link2">
+                <li>link</li>
+            </ul>
+        </div>
+    <div id="main1" class="clear">
+            <h2>TITLE HEADING</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+            <div class="gr">image</div>
+            <h3>Title text</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div id="main2" class="clear">
+            <h2>About Me</h2>
+            <div class="gr">image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim.</p>
+    </div>
+    <div id="main3" class="clear">
+        <h2>TITLE HEADING</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+            <div class="gr">image</div>
+            <h3>Title text</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div id="main4" class="clear">
+        <h2>Popular Post</h2>
+        <div class="gr">image</div>
+        <div class="gr">image</div> 
+        <div class="gr">image</div>
+         <h2>Follow Me</h2>   
+         <p>Some text..</p>
+    </div>
+    <div id="footer">
+        </div>
+       </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+@charset "utf-8";
+body { font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 14px; line-height: 1.5;
+    color:#3d3d3d; 
+}
+* { box-sizing: border-box; }
+.inner { width:1200px; margin:auto;}
+.clearboth::after {
+    content:"";
+    display:block;
+    clear: both;
+}
+/* 상단영역 스타일 시작 */
+#header > div:nth-child(1){
+    border-bottom: 1px solid #ccc; 
+}
+#header div div ul {
+   
+    float: right;
+    padding:10px 0;
+}
+#header div div ul li {
+    float:left;
+    line-height: 28px;
+    padding-left: 10px;
+}
+#header > div:nth-child(2) {
+    text-align: center;
+    padding:20px 0; 
+}
+#header > div:nth-child(2) h1{ 
+    float:left;
+}
+#header > div:nth-child(2) span{ 
+    float:right;
+}
+#header > div:nth-child(2) ul { 
+    width:400px;
+    display:inline-block;
+    padding-top:20px;
+}
+#header > div:nth-child(2) ul li {
+    float:left;
+    width:20%;
+}
+#header > div:nth-child(2) input {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+/* 상단영역 스타일 끝 */
+.main_tit h2 { padding-top:50px; font-size: 36px; padding-bottom:20px; text-align: center; }
+.main_tit p {
+    font-size: 18px; text-align: center;
+}
+#visual { background-color:#ffcc00; padding:0 0 40px; text-align: center; color:#fff; }
+#service h2 {
+    
+    color:#0081cb;
+    width: 70%;
+    margin: 0 auto;
+}
+.ser_ul {
+    
+    padding: 30px 0;
+}
+.ser_ul li {
+    width:30%;
+    float: left;
+    text-align: center;
+}
+.ser_ul li:not(:last-child){
+    margin-right: 5%; 
+}
+.ser_ul li img {
+    width: 70%;
+}
+.ser_ul li h3 { padding-top: 20px;}
+.ser_ul li p { padding-bottom:20px;}
+.ser_ul a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border:1px solid #0081cb;
+    margin: auto;
+}
+.ser_ul li:hover a {
+    background: #0081cb;
+    color: #fff;
+}
+#blog { background: #ddd; padding-bottom: 50px; }
+#blog li { float:left; width: 24.25%; background: #fff; position: relative; }
+#blog li:not(:last-child) {
+    margin-right: 1%;
+}
+#blog li img {
+    width: 100%;
+}
+.text_div {
+    padding:15px; 
+}
+.black_bg {
+    width: 100%;
+    height: 198px;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.5s;
+}
+.black_bg a {
+    display: block;
+    width: 80px;
+    height: 30px; 
+    position: absolute;
+    left:calc(50% - 40px);
+    top: 84px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+#blog li:hover .black_bg {
+    opacity: 1;
+}
+#quick  { padding:50px 0;}
+#quick li { float:left; width: 24.25%;  position: relative; 
+ height: 200px; overflow: hidden;
+}
+#quick li:not(:last-child) {
+    margin-right: 1%;
+}
+#quick li:nth-child(1) {
+    background: #008ed6;
+}
+#quick li:nth-child(2) {
+    background: #19ccc9;
+}
+#quick li:nth-child(3) {
+    background: #2cadef;
+}
+#quick li:nth-child(4) {
+    background: #425ad3;
+}
+.movediv {
+    width:100%;
+    height: 400px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+#quick li:hover .movediv {
+    top: -200px; 
+}
+.movediv h3 { font-size: 22px; font-weight: bold; padding-bottom: 10px; }
+.movediv div {
+    height: 200px;
+    padding: 30px;
+}
+.movediv div:nth-child(2) {
+    padding-top: 60px;
+    background: rgba(0,0,0,0.3);
+}
+.movediv div:nth-child(2) a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #fff;
+    line-height: 28px; 
+    margin: auto;
+}
+#footer_menu { border-bottom:1px solid #ccc; border-top: 1px solid #ccc; }
+
+#footer_menu ul { float: left; }
+#footer_menu ul li { float: left; padding:0 20px; border-left: 1px solid #ccc; line-height: 50px; }
+#footer_menu .inner > a { float:right; line-height: 50px; padding:0 20px; border-left:1px solid #ccc; border-right:1px solid #ccc;  }
+#footer_menu ul li:last-child {
+    border-right: 1px solid #ccc; 
+}
+#footer_copy {
+    padding:20px; 
+}
+#footer_copy h1 { float:left;  padding-right: 20px; }
+#footer_copy address { float:left; width:50%; }
+#footer_copy ul { float: right; }
+#footer_copy ul li { float: left; padding-left: 10px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

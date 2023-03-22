@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body {
+      font-family: "맑은 고딕", sans-serif;
+      color: #333;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit;}
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: normal;
+    }
+    #wrap {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    #header {
+      height: 120px;
+      font-size: 0;
+      padding:45px 0;
+    }
+    li { list-style: none; }
+    #header h1 {
+      display: flex;
+      width: 10%;
+      font-size: 28px;
+      line-height: 30px;
+    }
+    #header ul {
+      display: flex;
+      width: 25%;
+      margin-left: 65%;
+      vertical-align: top;
+    }
+    #header ul li {
+      display: flex;
+      width: 25%;
+      font-size: 14px;
+      border-right: 1px solid #ccc;
+      text-align: center;
+    }
+    #header ul li.rightnone {
+      border-right: none;
+    }
+    h2 {
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 1px solid #333;
+      margin-bottom: 30px;
+    }
+    #mainContents ul {
+      font-size: 0;
+      display: flex;
+    }
+    #mainContents li {
+      display: flex;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      width: 30%;
+      text-align: center;
+      padding: 40px 0;
+      justify-content: center;
+    }
+    .mr5 {
+      margin-right: 5%;
+    }
+    #mainContents li span {
+      display: flex;
+    }
+    #mainNotice li {
+      border-bottom: 1px solid #ccc;
+      line-height: 40px;
+    }
+    #footer {
+      padding: 20px 0;
+      display: flex;
+    }
+    address {
+      font-style: normal;
+      display: flex;
+      width: 70%
+    }
+    #footer h1 {
+      display: flex;
+      width: 28%;
+      text-align: right;
+      align-items: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1>Green</h1>
+      <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li class="rightnone"><a href="#">menu4</a></li>
+      </ul>
+    </div>
+    <div id="contents">
+      <div id="mainContents">
+        <h2>메인 컨텐츠 01</h2>
+        <ul>
+          <li class="mr5">
+            <h3>작은 제목입니다.</h3>
+            글적는 부분입니다.
+            <span>2022.10.12</span>
+          </li>
+          <li class="mr5">
+            <h3>작은 제목입니다.</h3>
+            글적는 부분입니다.
+            <span>2022.10.12</span>
+          </li>
+          <li>
+            <h3>작은 제목입니다.</h3>
+            글적는 부분입니다.
+            <span>2022.10.12</span>
+          </li>
+        </ul>
+      </div>
+      <div id="mainNotice">
+        <h2>공지사항</h2>
+        <ul>
+          <li><a href="#">그린컴퓨터 아카데미 소식</a></li>
+          <li><a href="#">그린컴퓨터 아카데미 소식</a></li>
+          <li><a href="#">그린컴퓨터 아카데미 소식</a></li>
+          <li><a href="#">그린컴퓨터 아카데미 소식</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <address>주소 : 서울특별시 용산구 한강대로 대표이사: 그린 사업자등록번호 : 110-12-12345 통신판매신고 : 
+        <br/>제 2020-서울용산-000호</address>
+      <h1>Green</h1>
+    </div>
+  </div>
+</body>
+</html>

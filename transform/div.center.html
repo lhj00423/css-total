@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body > div{
+            width: 100%;
+            height: 100vh;
+            background-color: lightblue;
+        }
+
+        div div{
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            animation: divCh 5s 1s infinite linear;
+            transform: translate(-50%,-50%);
+        }
+
+        #line1 {
+            animation: divA 3s 1s infinite linear;
+        }
+        #line2{
+            height: 300px;
+            width: 0;
+            left: 0%;
+            top: 50%;
+            position: absolute;
+            animation: divB 3s 1s infinite linear;
+        }
+
+        #line3{ 
+            height: 300px;
+            width: 0;
+            right: 0%;
+            top: 50%;
+            position: absolute;
+            animation: divC 3s 1s infinite linear;
+
+        }
+
+        #line4{
+            height: ;
+            width: ;
+            position: absolute;
+
+
+        }
+
+
+        @keyframes divA{
+            0%{
+                width: 0;
+                height: 5PX;
+                left: 0;
+                top: 0;
+                background-color: black;
+                
+            }
+            100%{
+                width: 400PX;
+                height: 5PX;
+                background-color: black;
+                left: 200px;
+                top: 0;
+            }
+        }
+
+        @keyframes divB{
+            0%{
+                width: 5px;
+                height: 0PX;
+                right: 0;
+                bottom: 0;
+                background-color: black;
+                
+            }
+            100%{
+                width: 5PX;
+                height: 300PX;
+                right: 200;
+                bottom: 0;
+                background-color: black;
+                
+            }
+        }
+
+        @keyframes divC{
+            0%{
+                width: 5px;
+                height: 0PX;
+                left: 0;
+                bottom: 0;
+                background-color: black;
+            }
+            100%{
+                width: 5PX;
+                height: 300PX;
+                left: 200;
+                bottom: 0;
+                background-color: black;
+            }
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+        </div>
+        <div>green acsdemy</div>
+    </div>
+</body>
+</html>
+키패드 세개 넓이/ 높이 /오파시티
+1. w 0 ~400px
+2.h 오파시티

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* { margin:0; padding:0; border:0; outline:0; vertical-align:baseline; }
+        ul, li, ol, dl, dd, dt { list-style:none; }
+        img, video { vertical-align:top; border:0; }
+        input, select, textarea, button {
+	    font:inherit; color:inherit; vertical-align:middle; border-radius:0;
+            }
+        a, a:hover, a:focus { color: inherit; text-decoration: none; }
+        address { font-style:normal; }
+        h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+        
+
+        body { font-family: '맑은 고딕', sans-serif; 
+            font-size: 14px; line-height: 1.5;
+                color:#3d3d3d; 
+            }
+        * { box-sizing: border-box; }
+
+        .inner { width:1200px; margin:  auto;}
+
+        /*클리어*/
+        .clearboth::after {
+            content:"";
+            display:block;
+            clear: both;}
+        /*클리어*/
+
+/*상단*/
+
+
+
+#header{
+    margin: 0 auto ;
+    width: 100%;
+    max-width: 1100px;
+}
+
+#header div div ul {
+    float: right;
+    padding:10px 0;
+    
+}
+#header div div ul li {
+    float:left;
+    line-height: 28px;
+    padding-left: 10px;
+}
+#header > div:nth-child(2) {
+    text-align: center;
+    padding:20px 0; 
+}
+#header > div:nth-child(2) h1{ 
+    float:left;
+}
+#header > div:nth-child(2) span{ 
+    float:right;
+}
+#header > div:nth-child(2) ul { 
+    width:400px;
+    display:inline-block;
+    padding-top:20px;
+}
+#header > div:nth-child(2) ul li {
+    float:left;
+    width:20%;
+}
+#header > div:nth-child(2) input {
+    border: 1px solid #ccc;
+    margin-top: 20px;}
+
+#inin{
+        float: right;
+    }
+
+    /*메인*/
+
+    /*메인*/
+
+ .main_tit h2 { 
+    padding-top:50px; font-size: 36px; padding-bottom:20px; text-align: center; }
+.main_tit p {
+    font-size: 18px; text-align: center;
+}
+#visual { background-color:#ffcc00; padding:0 0 40px; text-align: center; color:#fff; }
+#service h2 {
+    color: #fff;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#visual {
+    padding: 30px 0;
+}
+#info{
+    margin: 0 auto ;
+    width: 100%;
+    max-width: 1100px;
+}
+
+#info ul li{
+    width: 30%;
+    margin-left: 30px;
+    text-align: center;
+}
+.title h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: lightskyblue;
+}
+
+.title:nth-child(1) p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+#info ul li img {
+    width: 70%;
+    margin-bottom: 10px;
+
+}
+#info ul{
+    display: flex;
+}
+
+#info ul li{
+    
+}
+
+#blog {
+    background: lightgray;
+    padding-bottom: 50px;}
+
+#blog li{
+    background: white;
+}
+    #blog ul{
+        display: flex;
+    }
+    
+#blog li { 
+    width: 25%;
+    background: #fff;
+    position: relative; }
+
+#blog li:not(:last-child) {
+    margin-right: 1%;
+}
+
+.text div{
+        padding: 15px;
+    }
+#blog li img{
+    width: 100%;}
+
+
+#blog:nth-child(1) h2{
+    color: black;
+
+}
+
+.blackbg{
+    width: 100%;
+   
+}
+
+#tqtq{
+    margin: 0 auto;
+}
+
+.blog{
+    margin: 0 auto;
+    width: 100%;
+    max-width:1100px ;
+}
+
+ 
+#quick  { padding:50px 0;}
+#quick li {
+    float:left; 
+    width: 24%;  
+    position: relative; 
+    height: 200px; }
+ 
+#quick li:not(:last-child) {
+    margin-right: 1%;
+}
+#quick li:nth-child(1) {
+    background: #3c56da;
+}
+#quick li:nth-child(2) {
+    background: hsl(155, 62%, 54%);
+}
+#quick li:nth-child(3) {
+    background: #2cadef;
+}
+#quick li:nth-child(4) {
+    background: #3c56da;}
+
+
+#footer_menu ul{
+    display: flex;
+
+    
+}
+
+#foo{
+    border-top: 1px solid lightslategray;
+    border-bottom:  1px solid lightslategray;
+    margin-top: 40px;
+}
+#footer_menu ul li{
+   float: left;
+    padding-left: 10px;
+    padding-right: 10px ;
+    border-right:1px solid lightslategray ;
+    border-left:1px solid lightslategray ;
+    
+}
+
+#footer_menu ul li:nth-child(1){
+    margin-left: 30px;
+}
+
+
+
+#top {
+    display:inline-block;
+}
+
+#foo{
+    display: flex;
+    justify-content: space-between;
+}
+#footer{
+    display: flex;
+    margin: 0 auto ;
+    width: 100%;
+    max-width: 1100px
+    
+}
+
+#sese {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+#sese ul{
+    padding-right: 10px ;
+    float: right;
+}
+
+#sese ul li{
+    float: left;
+    padding-right: 15px ;
+    margin-bottom: 20px;
+}
+
+
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="top_gnb">
+               <div class="inner_container">
+                    <ul>
+                        <li><a href="#"><img src="ico_s_facebook.gif" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="ico_s_twitter.gif" alt="트위터"></a></li>
+                        <li><a href="#"><img src="ico_s_youtube.gif" alt="유튜브"></a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">한국어</a></li>
+                    </ul>
+               </div> 
+            </div>
+            <div class="inner_container" id="top_menu">
+                <h1><img src="logo.jpg" alt="이글루시큐리티"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">기업소개</a></li>
+                        <li><a href="#">솔루션</a></li>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">PR</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+                </nav>
+                <div id="inin">
+                <input type="text">
+                </div>
+            </div>
+        </div>
+        <div id="main" class="clearboth">
+            <section id="visual">
+                <div class="title">
+                    <h2>Monthly Security Peport</h2>
+                    <p>본 보고서는 이글루시큐리티에서 보안 매거진으로 고객부터 it보안 종사자까지 더 많은 분들과 보안 이슈를 공유
+                        함으로써 안전한 보안환경을 만들기 위해 제작되었습니다.</p>
+                </div>
+                <div class="inner_container">
+                    <img src="visual.gif" alt="일러스트그림">
+                </div>
+            </section>
+            <section id="info" class="inner_container">
+                <div class="title">
+                    <h2>국내 no.1 보안관리 전문기업, 이글루시큐리티는 글로벌대표<br>보안기업입니다.</h2>
+                    <p>이글루시큐리티는 점차 지능적으로 변화하는 보안위협에 선제적으로 대응하기위해 혁신적인 솔루션과 서비스를<br>고객에게 제공하고 있습니다.</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="company_01.jpg" alt="">
+                        <h3>솔루션</h3>
+                        <p>차세대 종합 보안관리 플랫폼</p>
+                        <a href="#">more</a>
+                    </li>
+                    <li>
+                        <img src="company_02.jpg" alt="">
+                        <h3>보안관제</h3>
+                        <p>24시간 365일 종합보안관제 서비스</p>
+                        <a href="#">more</a>
+                    </li>
+                    <li>
+                        <img src="company_03.jpg" alt="">
+                        <h3>보안관제</h3>
+                        <p>차세대 종합 보안관리 플랫폼</p>
+                        <a href="#">more</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="blog">
+                <div class="title">
+                    <h2>BLOG POST</h2>
+                    <p>이글루시큐리티의 다양한 소식과 유익한 정보가 담긴 블러그를 소개합니다.</p> 
+                </div>
+                <ul class="inner_container" id="mo">
+                    <li>  
+                        <div>
+                            <img src="img01.gif" alt="">
+                            <div class="blackbg">
+                                <a href="#">more</a>
+                            </div> 
+                        </div>
+                        <div class="text">
+                            <h3>IoT보안위협에 따른 대응...</h3>
+                            <p>IoT보안위협에 따른 대응방안Internet of Things= Internet of Threats(사물인터넷인가?위...)
+                                <span>2017.06.07</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="tqtq">
+                            <img src="img02.gif" alt="">
+                            <div class="blackbg">
+                                <a href="#">more</a>
+                            </div> 
+                        </div>
+                        <div class="text">
+                            <h3>IoT보안위협에 따른 대응...</h3>
+                            <p>IoT보안위협에 따른 대응방안Internet of Things= Internet of Threats(사물인터넷인가?위...)
+                                <span>2017.06.07</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="img03.gif" alt="">
+                            <div class="blackbg">
+                                <a href="#">more</a>
+                            </div> 
+                        </div>
+                        <div class="text">
+                            <h3>IoT보안위협에 따른 대응...</h3>
+                            <p>IoT보안위협에 따른 대응방안Internet of Things= Internet of Threats(사물인터넷인가?위...)
+                                <span>2017.06.07</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="img04.gif" alt="">
+                            <div class="blackbg">
+                                <a href="#">more</a>
+                            </div> 
+                        </div>
+                        <div class="text">
+                            <h3>IoT보안위협에 따른 대응...</h3>
+                            <p>IoT보안위협에 따른 대응방안Internet of Things= Internet of Threats(사물인터넷인가?위...)
+                                <span>2017.06.07</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="quick" class="inner_container">
+                <ul>
+                    <li>
+                        <div class="move">
+                            <div>
+                                <h2>Business Map</h2>
+                                <img src="foo_01.jpg" alt="">
+                                <p>이글루시큐리티를 만나는 가장 빠른 방법</p>
+                            </div>
+                            <div>
+                                <h2>Business Map</h2>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="move">
+                            <div>
+                                <h2>다운로드</h2>
+                                <img src="foo_02.jpg" alt="">
+                                <p>제품관련파일을 다운로드 받으세요</p>
+                            </div>
+                            <div>
+                                <h2>다운로드</h2>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="move">
+                            <div>
+                                <h2>인재채용</h2>
+                                <img src="foo_03.jpg" alt="">
+                                <p>정직과 신뢰를 바탕으로 창의적인 글로벌인재를 기다립니다.</p>
+                            </div>
+                            <div>
+                                <h2>인재채용</h2>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="move">
+                            <div>
+                                <h2>IGLOO News</h2>
+                                <img src="foo_04.jpg" alt="">
+                                <p>이글루시큐리티의 최신 보안뉴스와 정보를 확인하세요.</p>
+                            </div>
+                            <div>
+                                <h2>IGLOO News</h2>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <footer>
+            <div id="footer_menu">
+                <div id="foo" class="inner_container">
+                    <ul>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                     <a href="#" class="top">top</a>
+                </div>
+            </div>
+            <div id="sese" class="inner_container">
+                <h1><img src="f_logo.gif" alt="">
+                </h1>
+                <address>서울특별시 송파구 정의로8길 7 (문정동 640-3) 한스빌딩 6층 IGLOO SECURITY TEL : 02-3452-<br>8814 FAX : 02-3452-8815 COPYRIGHT 2017 IGLOO SECURITY. ALL RIGHTS RESERVED.</address>
+                <ul>
+                    <li><a href="#"><img src="ico_s_facebook.gif" alt=""></a></li>
+                    <li><a href="#"><img src="ico_s_twitter.gif" alt=""></a></li>
+                    <li><a href="#"><img src="ico_s_youtube.gif" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        #wrap{
+            width: 100%;
+            height: 100vh;
+            background-color: pink;
+        }
+
+        @keyframes divA{
+            0%{
+                width: 0;
+                height: 10PX;
+               
+                background-color: black;
+                
+            }
+            100%{
+                width: 400PX;
+                height: 10PX;
+                background-color: black;
+              
+            }
+        }
+
+        @keyframes divB{
+            0%{
+                width: 10PX;
+                height: 0;
+                left: 0;
+                top: 0;
+                background-color: black;
+                
+            }
+            100%{
+                width: 10PX;
+                height: 250PX;
+                left: 0;
+                top: 0;
+                background-color: black;
+              
+            }
+        }
+
+        @keyframes divC{
+            0%{
+                width: 10PX;
+                height: 0;
+                right: 0;
+                bottom: 0;
+                background-color: black;
+                
+            }
+            100%{
+                width: 10PX;
+                height: 250PX;
+                right: 0;
+                bottom: 0;
+                background-color: black;
+              
+            }
+        }
+
+        #green{
+            width: 400px;
+            height: 250px;
+            
+            /*
+            transition-property: wdith height;
+            transition-duration:1s, 2s;
+            */
+            transition: 1s;
+            opacity: 1;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        #green:hover{
+            opacity: 10;
+        }
+
+
+
+        #box{
+            width: 400px ;
+            height: 250px;
+            background-color: plum ;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+
+        #box div{
+        
+        position: absolute;}
+
+        #top, #bottom{
+            width: 100%;
+            height: 10px;
+
+        }
+        #left,#right{
+            width:10px ;
+            height:100% ;
+           
+        }
+
+        #top{
+            right: 0;
+            top: 0;
+            animation: divA 3s 1s infinite linear;
+        }
+
+        #bottom{
+            bottom: 0;
+            left: 0;
+            animation: divA 3s 1s infinite linear;
+        }
+        #left{
+            left: 0;
+            bottom: 0;
+            animation: divB 3s 1s infinite linear;
+            
+        }
+
+        #right{
+            right: 0;
+            top: 0;
+            animation: divC 3s 1s infinite linear;
+        }
+
+
+    </style>
+</head>
+<body>
+        <div id="wrap">
+            <div id="box">
+                <div id="top"></div>
+                <div id="green">Green Academy</div>
+                <div id="left"></div>
+                <div id="bottom"></div>
+                <div id="right"></div>
+            </div>
+            
+        </div>
+</body>
+</html>
